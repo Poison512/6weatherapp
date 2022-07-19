@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+    <header class="text-center">
+        <h1> Weather App</h1>
+    </header>
+
+    <main>
+        <section class="container-fluid" style="height: 300px width=300px;">
+            <div class="row d-flex h-100" id="search-weather">
+                <div class="col-md-4">
+                    <form id="search-form">
+                        <h2 class="card-header" style="background-color:rgb(131, 179, 163)">Search for City Forecast</h2>
+                        <div id="error"></div>
+                        <input type="text" class="form-control card-body" id="search-input">
+                        <button type="button" class="btn btn-primary btn-xs btn-block" id="search-btn">Search City</button>
+                    </form>
+                </div>
+            <!--Todays Weather-->
+        <section class="container-fluid col-7 weather-display">
+           <div class="card d-flex border-dark">
+               <h2 class="card-header text-center" style="background-color:rgb(131, 179, 163)" id="todays-weather"></h2>
+               <div class="card-body">
+                   <p id="city-date"></p>
+                   <p id="tempature"></p>
+                   <p id="feels"></p>
+                   <p id="wind"></p>
+                   <p id="humidity"></p>
+                   <p id="UV-index"></p>
+               </div>
+           </div> 
+        
+        </section>
+        </div>
+        </section>
+        <!--5 day forecast-->
+        <section class="container-fluid forecast-history" style="height:300">
+        <section class="col-md-7" id="forecast-section">
+            <div class="card d-flex w-100 border-dark">
+                <h3 class="card-header" style="background-color:rgb(131, 179, 163)">This Weeks Forecast:</h3>
+            <div class="card-deck d-flex h-100 w-100">
+                <div class="card" id="day-1"></div>
+                <div class="card" id="day-2"></div>
+                <div class="card" id="day-3"></div>
+                <div class="card" id="day-4"></div>
+                <div class="card" id="day-5"></div>
+            </div>
+
+            </div>
+        </section>
+        <!--History-->
+        <div class="row d-flex h-100" id="forecast-searches">
+            <section class="col-md-4">
+                <div class="card d-flex h-75 border-dark" id="search-history">
+                    <h3 class="card-header" style="background-color:rgb(131, 179, 163)">Recent Searches</h3>
+                    <div class="card-body" id="history-list">
+
+                    </div>
+                </div>
+            </section>
+        </div>
+
+</section>
+</main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

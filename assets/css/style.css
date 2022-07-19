@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(16, 31, 36);
+}
+header{
+    background-color: rgb(131, 179, 163);
+}
+ h1, h2, h3, p{
+ color: aliceblue;
+}
+.btn{
+    background-color: rgb(131, 179, 163);
+}
+.forecast-history{
+    display:none;
+}
+.weather-display{
+    display: none;
+}
+#search-history{
+    list-style-type: none;
+}
