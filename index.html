@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 <body>
-    <header class="text-center">
+    <header class="text-center col-md-12">
         <h1> Weather App</h1>
     </header>
 
     <main>
-        <section class="container-fluid" style="height: 300px width=300px;">
+        <section class="container-center" style="height: 300px width=300px;">
             <div class="row d-flex h-100" id="search-weather">
                 <div class="col-md-4">
                     <form id="search-form">
@@ -25,7 +25,7 @@
                     </form>
                 </div>
             <!--Todays Weather-->
-        <section class="container-fluid col-7 weather-display">
+        <section class="col align-self-centers weather-display">
            <div class="card d-flex border-dark">
                <h2 class="card-header text-center" style="background-color:rgb(131, 179, 163)" id="todays-weather"></h2>
                <div class="card-body">
@@ -43,7 +43,7 @@
         </section>
         <!--5 day forecast-->
         <section class="container-fluid forecast-history" style="height:300px">
-        <section class="col-md-7" id="forecast-section">
+        <section class="col align-self-center" id="forecast-section">
             <div class="card d-flex w-100 border-dark">
                 <h3 class="card-header" style="background-color:rgb(131, 179, 163)">This Weeks Forecast:</h3>
             <div class="card-deck d-flex h-100 w-100">
@@ -58,7 +58,7 @@
         </section>
         <!--History-->
         <div class="row d-flex h-100" id="forecast-searches">
-            <section class="col-md-4">
+            <section class="align-self-center">
                 <div class="card d-flex h-75 border-dark" id="search-history">
                     <h3 class="card-header" style="background-color:rgb(131, 179, 163)">Recent Searches</h3>
                     <div class="card-body" id="history-list">

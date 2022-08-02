@@ -1,8 +1,14 @@
 body{
     background-color: rgb(16, 31, 36);
+
 }
 header{
     background-color: rgb(131, 179, 163);
+}
+main {
+    align-content: center;
+    margin: 15px;
+    padding: 10px;
 }
  h1, h2, h3, p{
  color: rgb(3, 10, 15);

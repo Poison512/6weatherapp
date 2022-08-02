@@ -58,7 +58,7 @@ var getWeather = function(userSearch) {
         let date = currentDate.getDate()
         let month = currentDate.getMonth()
         let year = currentDate.getFullYear()
-        todaysWeather.textContent = data.name + "" + month + "/" + date + "/" + year
+        todaysWeather.textContent = data.name + " " + month + "/" + date + "/" + year
 
         //dispplay current temp, feels, wind, humidity,UV
         console.log(data)
